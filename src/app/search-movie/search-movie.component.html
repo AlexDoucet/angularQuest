@@ -1,0 +1,60 @@
+
+<form [formGroup]="movieForm" #myForm="ngForm">
+
+
+<div formGroupName = "login">
+  <label for="identifiant">Identifiant</label>
+  <input type="text" name="identifiant" formControlName="identifiant">
+
+
+  <label for="titre">Titre</label>
+  <input type="text" name="titre" formControlName="titre">
+
+</div>
+
+
+<div class="type" formGroupName="typeForm">
+  <label for="type">Type</label>
+    <ul>
+
+      <li>
+        <label for="">Film</label>
+        <input type="checkbox" name="film" formControlName="film">
+
+      </li>
+
+      <li>
+        <label for="">Série</label>
+        <input type="checkbox" name="serie" formControlName="serie">
+
+      </li>
+
+      <li>
+        <label for="">Episode</label>
+        <input type="checkbox" name="episode" formControlName="episode">
+
+      </li>
+
+    </ul>
+</div>
+
+<label for="year">Année</label>
+<input type="number" name="year" formControlName="year">
+
+
+<ul>
+  <li>
+    <label for="courte">Courte</label>
+    <input type="checkbox" name="courte" formControlName="courte">
+
+  </li>
+
+  <li>
+<label for="longue">Longue</label>
+<input type="checkbox" name="longue" formControlName="longue">
+
+  </li>
+</ul>
+
+
+</form>
